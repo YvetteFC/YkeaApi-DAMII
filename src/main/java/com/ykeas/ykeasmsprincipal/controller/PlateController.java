@@ -7,7 +7,6 @@ import com.ykeas.ykeasmsprincipal.model.request.PlateCreateRequest;
 import com.ykeas.ykeasmsprincipal.model.request.PlateEditRequest;
 import com.ykeas.ykeasmsprincipal.service.IPlateService;
 import lombok.AllArgsConstructor;
-import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
