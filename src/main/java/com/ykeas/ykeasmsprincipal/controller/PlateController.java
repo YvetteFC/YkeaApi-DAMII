@@ -21,9 +21,9 @@ public class PlateController {
 
     private IPlateService plateService;
 
-    @GetMapping("/listado")
-    public List<Plate> index() {
-        return plateService.index();
+    @GetMapping("/listado/{name}")
+    public List<Plate> index(@PathVariable String name) {
+        return plateService.index(name);
     }
 
     @PostMapping("/registrar")

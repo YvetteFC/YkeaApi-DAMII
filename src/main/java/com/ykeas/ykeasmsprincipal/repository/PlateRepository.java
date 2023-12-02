@@ -6,5 +6,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface PlateRepository extends JpaRepository<Plate, Long> {
-    public List<Plate> findAllByEnabledIsTrue();
+    public List<Plate> findAllByEnabledIsTrueAndNameContains(String name);
 }

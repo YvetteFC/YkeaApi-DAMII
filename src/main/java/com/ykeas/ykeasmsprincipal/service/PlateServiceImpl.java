@@ -19,8 +19,8 @@ public class PlateServiceImpl implements IPlateService {
     private CategoryRepository categoryRepository;
 
     @Override
-    public List<Plate> index() {
-        return plateRepository.findAllByEnabledIsTrue();
+    public List<Plate> index(String name) {
+        return plateRepository.findAllByEnabledIsTrueAndNameContains(name);
     }
 
     @Override
